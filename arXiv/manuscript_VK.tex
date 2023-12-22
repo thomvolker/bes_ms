@@ -175,10 +175,10 @@ Scientific claims gain credibility by replicability, especially if
 replication under different circumstances and varying designs yields
 equivalent results. Aggregating results over multiple studies is,
 however, not straightforward, and when the heterogeneity between studies
-increases, conventional methods as (Bayesian) meta-analysis and Bayesian
-sequential updating become infeasible. \emph{Bayesian Evidence
+increases, conventional methods such as (Bayesian) meta-analysis and
+Bayesian sequential updating become infeasible. \emph{Bayesian Evidence
 Synthesis}, built upon the foundations of the Bayes factor, allows to
-aggregate the support for conceptually similar hypotheses over studies,
+aggregate support for conceptually similar hypotheses over studies,
 regardless of methodological differences. We assess the performance of
 Bayesian Evidence Synthesis over multiple effect and sample sizes, with
 a broad set of (inequality-constrained) hypotheses using Monte Carlo
@@ -188,9 +188,12 @@ complex (informative) hypotheses regardless of methodological
 differences between studies, and performs adequately if the set of
 studies considered has sufficient statistical power. Additionally, we
 pinpoint challenging conditions that can lead to unsatisfactory results,
-and provide suggestions on how to handle these situations.
+and provide suggestions on handling these situations. Ultimately, we
+show that Bayesian Evidence Synthesis is a promising tool that can be
+used when traditional research synthesis methods are not applicable due
+to insurmountable between-study heterogeneity.
 \end{abstract}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, frame hidden, enhanced, interior hidden, boxrule=0pt, sharp corners, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, sharp corners, boxrule=0pt, interior hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, enhanced]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -1676,8 +1679,8 @@ overarching hypothesis.
 Overall, evaluating against the complement has advantages over
 evaluating against the unconstrained. Evaluating against the complement
 results in more statistical power, and the resulting Bayes factor has no
-upper bound. Moreover, in a practical research setting, some studies may
-have insufficient power, while others have sufficient power. In such
+upper bound. Additionally, in a practical research setting, some studies
+may have insufficient power, while others have sufficient power. In such
 instances, adequately powered studies will eventually provide decisive
 support when evaluated against the complement hypothesis. When
 evaluating against the unconstrained, the underpowered studies may
@@ -1691,12 +1694,12 @@ highly variable. We discussed several approaches to deal with this
 issue, but future research should compare the advantages and
 disadvantages of these approaches.
 
-Moreover, there are other features that this research did not address.
-First of all, we focused solely on inequality constrained hypotheses,
-whereas equality constrained hypotheses (such as the classical null
-hypothesis) are still standard practice in research. As said, evaluating
-null hypotheses may amplify power issues and thus affect the performance
-of \emph{BES}, therefore warranting future research. Additionally, we
+There are other aspects that this research did not address. First of
+all, we focused solely on inequality constrained hypotheses, whereas
+equality constrained hypotheses (such as the classical null hypothesis)
+are still standard practice in research. As said, evaluating null
+hypotheses may amplify power issues and thus affect the performance of
+\emph{BES}, therefore warranting future research. Additionally, we
 considered only three members of the GLM family and used relatively
 simple data generating models with few parameters. When considering many
 parameters, each individual parameter may only contribute little when

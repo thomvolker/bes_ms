@@ -30,7 +30,7 @@ affiliations:
     country: The Netherlands
     postal-code: 3584 CH
 abstract: |
-  Scientific claims gain credibility by replicability, especially if replication under different circumstances and varying designs yields equivalent results. Aggregating results over multiple studies is, however, not straightforward, and when the heterogeneity between studies increases, conventional methods as (Bayesian) meta-analysis and Bayesian sequential updating become infeasible. *Bayesian Evidence Synthesis*, built upon the foundations of the Bayes factor, allows to aggregate the support for conceptually similar hypotheses over studies, regardless of methodological differences. We assess the performance of Bayesian Evidence Synthesis over multiple effect and sample sizes, with a broad set of (inequality-constrained) hypotheses using Monte Carlo simulations, focusing explicitly on the complexity of the hypotheses under consideration. The simulations show that this method can evaluate complex (informative) hypotheses regardless of methodological differences between studies, and performs adequately if the set of studies considered has sufficient statistical power. Additionally, we pinpoint challenging conditions that can lead to unsatisfactory results, and provide suggestions on how to handle these situations.
+  Scientific claims gain credibility by replicability, especially if replication under different circumstances and varying designs yields equivalent results. Aggregating results over multiple studies is, however, not straightforward, and when the heterogeneity between studies increases, conventional methods such as (Bayesian) meta-analysis and Bayesian sequential updating become infeasible. *Bayesian Evidence Synthesis*, built upon the foundations of the Bayes factor, allows to aggregate support for conceptually similar hypotheses over studies, regardless of methodological differences. We assess the performance of Bayesian Evidence Synthesis over multiple effect and sample sizes, with a broad set of (inequality-constrained) hypotheses using Monte Carlo simulations, focusing explicitly on the complexity of the hypotheses under consideration. The simulations show that this method can evaluate complex (informative) hypotheses regardless of methodological differences between studies, and performs adequately if the set of studies considered has sufficient statistical power. Additionally, we pinpoint challenging conditions that can lead to unsatisfactory results, and provide suggestions on handling these situations. Ultimately, we show that Bayesian Evidence Synthesis is a promising tool that can be used when traditional research synthesis methods are not applicable due to insurmountable between-study heterogeneity. 
 date: last-modified
 bibliography: "thesis.bib"
 pdf-engine: pdflatex
@@ -1369,14 +1369,14 @@ Moreover, evaluating sub-hypotheses allows to assess which constraints imposed b
 
 Overall, evaluating against the complement has advantages over evaluating against the unconstrained. 
 Evaluating against the complement results in more statistical power, and the resulting Bayes factor has no upper bound.
-Moreover, in a practical research setting, some studies may have insufficient power, while others have sufficient power. 
+Additionally, in a practical research setting, some studies may have insufficient power, while others have sufficient power. 
 In such instances, adequately powered studies will eventually provide decisive support when evaluated against the complement hypothesis. 
 When evaluating against the unconstrained, the underpowered studies may jeopardize the aggregated evidence. 
 That is, if underpowered studies occasionally render support against the hypothesis of interest, the adequately powered studies may not be able to compensate because of the upper bound. 
 A disadvantage of evaluating against the complement occurs if the true parameter value is on the boundary of the hypothesis of interest and its complement, because the aggregated support becomes highly variable. 
 We discussed several approaches to deal with this issue, but future research should compare the advantages and disadvantages of these approaches. 
 
-Moreover, there are other features that this research did not address. 
+There are other aspects that this research did not address. 
 First of all, we focused solely on inequality constrained hypotheses, whereas equality constrained hypotheses (such as the classical null hypothesis) are still standard practice in research. 
 As said, evaluating null hypotheses may amplify power issues and thus affect the performance of *BES*, therefore warranting future research.
 Additionally, we considered only three members of the GLM family and used relatively simple data generating models with few parameters. 
